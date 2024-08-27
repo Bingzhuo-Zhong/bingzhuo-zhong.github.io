@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="icon" href="./image/icon.png">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--- <title>Safe-sec-visor Architecture for Cyber-Physical Systems</title> --->
+<title>欢迎来到香港科技大学（广州）安全与智能信息物理系统实验室！</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="main-container">
+<div id="header-container">
+<div id="header">
+<div id="header-icon-text-container">
+<div id="header-icon-container" >
+<a href="index.html"><img src="./image/UST-GZ_white_L4.jpg" alt="" style="width: 494%; height: 135%; position: center; padding:-2px; margin: -10px;"></a>
+</div>
+<div id="header-text-container2">
+<a href="index.html">安全与智能信息物理系统实验室<br/>Laboratory for Safe, Secure, and Smart Cyber-Physical Systems</a>
+</div>
+</div>
+<div id="main">
+<button class="openbtn" onclick="openNav()">☰</button>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="layout-menu-container">
+<div id="layout-menu">
+<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+<div class="menu-category">SSS-CPS Lab<br /> @HKUST-GZ</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="index_Chinese.html">中文主页</a></div>
+<div class="menu-category">Research Projects</div>
+<div class="menu-item"><a href="Sva.html">Safe-sec-visor&nbsp;Architecture&nbsp;for&nbsp;CPS</a></div>
+<div class="menu-item"><a href="SbC.html">Secure-by-construction&nbsp;Synthesis</a></div>
+<div class="menu-item"><a href="MDBSys.html">Model-based&nbsp;Controller&nbsp;Synthesis</a></div>
+<div class="menu-item"><a href="DATASys.html">Data-driven&nbsp;Controller&nbsp;Synthesis</a></div>
+<div class="menu-item"><a href="Projects.html">Back</a></div>
+</div> <!-- <div id="layout-menu"> -->
+</div> <!-- <div id="layout-menu-container"> -->
+<div id="layout-content-container">
+<div id="layout-content">
+<div id="toptitle">
+<h1>Safe-sec-visor Architecture for Cyber-Physical Systems</h1>
+<div id="subtitle">Make AI trustworthy in CPS through sandboxing</div>
+</div>
+<p><div style="text-align: center;">
+<img alt="" src="image/safe-sec-visor.jpg" width ="95%" style="margin: 0 auto;" />
+</div></p>
+<p>The past few decades have witnessed increasing demands in employing many (potentially) high-performance artificial intelligence-based (a.k.a. AI-based) controllers, in Cyber-Physical Systems (CPS) for complex missions (e.g., autonomous driving). 
+Nevertheless, incorporating these controllers presents significant challenges in maintaining the safety and security of CPS.  
+Meanwhile, modern CPSs, such as autonomous cars and unmanned aerial vehicles, are typically safety-critical and prone to various security threats due to the tight interaction and information exchange between their cyber and physical components. 
+Therefore, the lack of verification for AI-based controllers could result in severe safety and security risks in real-world CPS applications.</p>
+<p>To address these concerns, this project introduces a system-level, secure-by-construction framework, called Safe-sec-visor architecture, which is designed to sandbox AI-based controllers at runtime, thereby enforcing the overall safety and security of physical systems. 
+This architecture primarily comprises two components: a safety-security advisor and a supervisor. 
+The supervisor's role is to check inputs from the AI-based controller, allowing them only if they do not compromise the system's safety or security. 
+In cases where the AI-based controller's input is deemed unsafe or insecure, the safety-security advisor steps in, providing an alternative control command to ensure the overall safety and security of the system.
+It is important to note that the safety-security advisor is employed only when necessary.
+Therefore, the proposed architecture allows exploiting the functionalities of AI-based controllers while without requiring any formal guarantees over these controllers.</p>
+<h2>Highlights of the results:</h2>
+<ol>
+<li><p>The design of the proposed architecture is independent of the construction of unverified controllers so that it is applicable to sandbox arbitrary types of unverified controllers.</p>
+</li>
+<li><p>The proposed architecture could enforce high-level logical safety properties modeled by deterministic finite automata over systems modeled by discrete-time non-cooperative stochastic games with continuous state and input sets.</p>
+</li>
+<li><p>The proposed architecture could handle both safety and security properties simultaneously.</p>
+</li>
+</ol>
+<h3>Related papers</h3>
+<ol>
+<li><p><b>B. Zhong</b>, S. Liu, M. Caccamo, and  M. Zamani,  <a href="https://ieeexplore.ieee.org/abstract/document/10384154" target=&ldquo;blank&rdquo;>Towards trustworthy AI: Sandboxing AI-based unverified controllers for safe and secure Cyber-Physical Systems</a>,  In: Proceedings of 62nd IEEE Conference on Decision and Control (CDC),  pp. 1833-1840,  2023.</p>
+</li>
+<li><p><b>B. Zhong</b>, H. Cao, M. Zamani, and M. Caccamo, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26789" target=&ldquo;blank&rdquo;>Towards safe AI: Sandboxing DNNs-based Controllers in Stochastic Games</a> In: Proceedings of the 37th AAAI Conference on Artificial Intelligence, Vol. 37 No. 12, pp. 15340-15349, 2023. </p>
+</li>
+<li><p><b>B. Zhong</b>, A. Lavaei, H. Cao, M. Zamani, and M. Caccamo. <a href="https://www.sciencedirect.com/science/article/pii/S1751570X2100100X?via%3Dihub" target=&ldquo;blank&rdquo;>Safe-visor architecture for sandboxing (AI-based) unverified controllers in stochastic Cyber-Physical Systems</a>, In: Nonlinear Analysis: Hybrid Systems, 43C. December 2021 (<a href="https://arxiv.org/abs/2102.05490" target=&ldquo;blank&rdquo;>Preprint</a>)</p>
+</li>
+<li><p>A. Lavaei, <b>B. Zhong</b>, M. Caccamo, and M. Zamani. <a href="https://dl.acm.org/doi/abs/10.1145/3457335.3461705" target=&ldquo;blank&rdquo;>Towards trustworthy AI: safe-visor architecture for uncertified controllers in stochastic cyber-physical systems</a>, In: Proceedings of the International Workshop on Computation-Aware Algorithmic Design for Cyber-Physical Systems, ACM, 2021</p>
+</li>
+<li><p><b>B. Zhong</b>, M. Zamani, and M. Caccamo. <a href="https://link.springer.com/chapter/10.1007/978-3-030-29662-9_15" target=&ldquo;blank&rdquo;>Sandboxing controllers for stochastic cyber-physical systems</a>. In: 17th International Conference on Formal Modelling and Analysis of Timed Systems (FORMATS), Lecture Notes in Computer Science (VOL 11750), 2019.</p>
+</li>
+</ol>
+<h3>Related talks</h3>
+<ol>
+<li><p>Presentation in CAADCPS Workshop, CPS-IoT Week 2021 (<b>Link</b>: <a href="https://youtu.be/lm8-73Sf894" target=&ldquo;blank&rdquo;>YouTube</a>)
+
+
+</p>
+</li>
+</ol>
+</div> <!-- <div id="layout-content"> -->
+<div id="footer-container">
+<div id="footer">
+<div id="footer-text">
+Last edited  on August 27<sup>th</sup> 2024 . </br>
+Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new design</a>.
+</div> <!-- <div id="footer-text"> -->
+</div> <!-- <div id="footer"> -->
+</div> <!-- <div id="footer-container"> -->
+</div> <!-- <div id="layout-content-container"> -->
+</div> <!--- <div id="layout"> --->
+</div> <!--- <div id="main-container"> --->
+<script>
+function openNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "280px";
+        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+        document.getElementById("layout-content-container").style.position = "fixed";
+    }
+}
+function closeNav() {
+    if (window.innerWidth <= 1200) {
+        document.getElementById("layout-menu").style.width = "0";
+        document.getElementById("layout-content-container").style.position = "static";
+        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        setInterval(
+            function(){ location.reload() },
+            500
+        );
+    }
+}
+</script>
+</body>
+</html>

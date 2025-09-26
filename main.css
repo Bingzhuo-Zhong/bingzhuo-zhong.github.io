@@ -702,11 +702,22 @@ div#member{
 div#member-text{
 	display: inline-block;
 	vertical-align: top;
+	width: 220px;
+	text-align: left;
+	margin-bottom: 15px;
+	margin-right: 10px;
+}
+
+div#member-text2{
+	display: inline-block;
+	vertical-align: top;
 	width: 600px;
 	text-align: left;
 	margin-bottom: 15px;
 	margin-right: 10px;
 }
+
+
 div#member img{
 	width: 150px;
 	margin: 0px;
